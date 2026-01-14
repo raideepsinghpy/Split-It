@@ -11,3 +11,24 @@
 .add-member button {
   width: 90px;
 }
+.split-options {
+  display: flex;
+  justify-content: flex-start;
+  gap: 16px;
+  margin: 16px 0;
+}
+
+
+.split-options label {
+  flex: flex;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 14px;
+}
+@media (max-width: 480px) {
+  .split-options {
+    flex-direction: column;
+    gap: 10px;
+  }
+}
