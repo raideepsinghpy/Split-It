@@ -11,24 +11,33 @@
 .add-member button {
   width: 90px;
 }
-.split-options {
+.split-toggle {
   display: flex;
-  justify-content: flex-start;
-  gap: 16px;
+  gap: 10px;
   margin: 16px 0;
 }
 
-
-.split-options label {
-  flex: flex;
-  display: flex;
-  align-items: center;
-  gap: 8px;
+.split-toggle button {
+  flex: 1;
+  padding: 10px 12px;
+  border-radius: 8px;
+  border: 1px solid #2563eb;
+  background: #f8fafc;
+  color: #2563eb; /* 🔵 blue text by default */
   font-size: 14px;
+  cursor: pointer;
 }
+
+
+.split-toggle button.active {
+  background: #2563eb;
+  color: white;
+  border-color: #2563eb;
+}
+
+/* Mobile safe */
 @media (max-width: 480px) {
-  .split-options {
+  .split-toggle {
     flex-direction: column;
-    gap: 12px;
   }
 }

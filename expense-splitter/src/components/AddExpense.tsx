@@ -72,25 +72,25 @@ function AddExpense({ members, onAdd }: Props) {
 
       <br /><br />
 
-     <div className="split-options">
-  <label>
-    <input
-      type="radio"
-      checked={splitMode === "equal"}
-      onChange={() => setSplitMode("equal")}
-    />
+     <div className="split-toggle">
+  <button
+    type="button"
+    className={splitMode === "equal" ? "active" : ""}
+    onClick={() => setSplitMode("equal")}
+  >
     Equal Split
-  </label>
+  </button>
 
-  <label>
-    <input
-      type="radio"
-      checked={splitMode === "custom"}
-      onChange={() => setSplitMode("custom")}
-    />
+  <button
+    type="button"
+    className={splitMode === "custom" ? "active" : ""}
+    onClick={() => setSplitMode("custom")}
+    
+  >
     Custom Split
-  </label>
-    </div>
+  </button>
+</div>
+
 
 
       {splitMode === "custom" && (
