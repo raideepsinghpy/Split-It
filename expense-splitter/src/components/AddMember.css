@@ -29,6 +29,6 @@
 @media (max-width: 480px) {
   .split-options {
     flex-direction: column;
-    gap: 10px;
+    gap: 12px;
   }
 }
