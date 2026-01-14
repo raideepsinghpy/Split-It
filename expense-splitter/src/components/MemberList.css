@@ -1,0 +1,29 @@
+.members-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.member-chip {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 8px 12px;
+  border-radius: 999px;
+  background: #f1f5f9;
+  color: #1a1a1a;
+  font-size: 14px;
+}
+
+.member-name {
+  font-weight: 500;
+}
+
+.member-balance.positive {
+  color: #16a34a;
+}
+
+.member-balance.negative {
+  color: #dc2626;
+}
